@@ -1,77 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JSON-PostCards</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typicode task</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 </head>
 <body>
+</body>
+<header>
+    <div class=" ">
+      <nav class="navbar navbar-expand-lg navbar-light p-3 text-center">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <span class="text-white">BLOG</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 header-nav">
+              <li class="nav-item">
+                <a class="nav-link text-body" aria-current="page" href="index.html">Home</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+    </div>
+  </header>
+    <div class="container">
+        <div class="mt-5">
 
-    
-        <div class="container">
+            <div class="post-creation-section">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="my-5 text-dark">Create a new blog post </h3>
+                        <form action="" id="post-form">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Post Title</label>
+                                <input type="text" class="form-control" placeholder="Put a title" id="post-title">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea" class="form-label">Post Body</label>
+                                <textarea class="form-control" rows="3"  id="post-body"></textarea>
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <button class="btn btn-warning" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
             <div class="post-display-section">
                 <div class="mt-5">
-                    <h3 class="my-3">Post Card</h3>
-                    <div class="post-box my-4">
+                    <h3 class="my-3">Blog Post</h3>
+                    <div class="posts-box">
                         <div class="row" id="post-layout">
                             <div class="col-md-4">
                                 <div class="card">
                                     <div class="card-body">
-                                        <div class="d-flex justify-content-end">
-                                            <h6 class=" id text-danger"></h6>
-                                        </div>
-                                        <h5 class="post-title mb-4">Lorem ipsum dolor sit amet.</h5>
-                                        <p class="post-body">
-                                            Lorem ipsum dolor sit amet consectetur, 
-                                            adipisicing elit. Quis nam laudantium nemo 
-                                            facilis aperiam nostrum, maxime repudiandae 
-                                            debitis labore architecto.
-                                        </p>
+                                        <h5 class="post-title mb-4">Post Title</h5>
+                                        <p class="post-body">Post Body</p>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="d-flex justify-content-end">
-                                            <h6 class=" id text-danger"></h6>
-                                        </div>
-                                        <h5 class="post-title mb-4">Lorem ipsum dolor sit amet.</h5>
-                                        <p class="post-body">
-                                            Lorem ipsum dolor sit amet consectetur, 
-                                            adipisicing elit. Quis nam laudantium nemo 
-                                            facilis aperiam nostrum, maxime repudiandae 
-                                            debitis labore architecto.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="d-flex justify-content-end">
-                                            <h6 class=" id text-danger"></h6>
-                                        </div>
-                                        <h5 class="post-title mb-4">Lorem ipsum dolor sit amet.</h5>
-                                        <p class="post-body">
-                                            Lorem ipsum dolor sit amet consectetur, 
-                                            adipisicing elit. Quis nam laudantium nemo 
-                                            facilis aperiam nostrum, maxime repudiandae 
-                                            debitis labore architecto.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
+                        </div>
                     </div>
-                </div>    
+                </div>
             </div>
+           
         </div>
-    </a>
-<script src="./js/access.js"></script>
-</body>
+    </div>
+    
+<script src="./js/script.js"></script>
 </html>
